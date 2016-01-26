@@ -6,7 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_url = "provisions/boxes/trusty-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "private_network", ip: "10.0.0.10"
-  config.vm.provider "virtualbox"""
+  config.vm.provider "virtualbox"
   config.vm.box_check_update = false
   config.vm.provision :shell, path: "provisions/bootstrap.sh"
   config.vm.define "moxy_virtual"
