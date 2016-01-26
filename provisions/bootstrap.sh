@@ -71,6 +71,7 @@ npm install -g less
 echo " "
 echo "___@@@ Install python related..."
 apt-get install -y python-setuptools python-dev build-essential python-pip
+apt-get install -y libjpeg-dev
 apt-get install libffi-dev  # need by bpython :)
 pip install --upgrade pip
 pip install --upgrade virtualenv virtualenvwrapper supervisor
